@@ -1,14 +1,17 @@
 
 # ML_From_Scratch: 
-This repository contains implementations of several machine learning algorithms for pattern recognition, dimensionality reduction, and classification tasks, including:
+This repository contains custom implementations of several essential machine learning algorithms for pattern recognition, dimensionality reduction, and classification tasks.
 
-Parzen Window PDF Estimator (Rectangular and Gaussian Kernels)
-k-NN Density Estimator
+These implementations are designed to help with understanding the inner workings of popular algorithms by building them from scratch in Python. The repository covers a range of non-parametric density estimators and linear models that are fundamental to many machine learning applications.
+
+[Parzen Window PDF Estimator](#Parzen_Window_PDF_Estimator)
+[k-NN Density Estimator](#k-NN_Density_Estimator)
 Naive Bayes Classifier
 Naive Bayes Classifier with Risk Implementation
 Principal Component Analysis (PCA)
 Linear Discriminant Analysis (LDA)
 These models are designed to estimate probability density functions (PDFs), perform dimensionality reduction, and apply Bayesian decision theory to make classification decisions.
+
 ## 1. Parzen Window PDF Estimator
 
 The Parzen window method is a non-parametric technique for estimating the PDF of a dataset by placing a kernel function (either a rectangular or Gaussian window) over each data point. The estimator sums the contributions of these kernels to approximate the overall density function.
