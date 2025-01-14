@@ -145,3 +145,125 @@ accuracy = parzen.evaluate(test_data, test_labels)
 print(f"Parzen Window Estimator Accuracy: {accuracy * 100:.2f}%")
 ```
 
+#### Example usage of the k-NN Density Estimator:
+
+```python
+from KNNClassifier import KNNClassifier
+import pandas as pd
+
+# Load training and testing data
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+train_labels = pd.read_csv('Train_Labels.csv', header=None).values.ravel()
+test_data = pd.read_csv('Test_Data.csv', header=None).values
+test_labels = pd.read_csv('Test_Labels.csv', header=None).values.ravel()
+
+# Initialize the k-NN PDF Estimator
+knn = KNNClassifier(k=5)
+
+# Train the model
+knn.fit(train_data, train_labels)
+
+# Evaluate the model
+accuracy = knn.evaluate(test_data, test_labels)
+print(f"k-NN Density Estimator Accuracy: {accuracy * 100:.2f}%")
+```
+
+#### 3. Naive Bayes Classifier:
+Example usage of the Naive Bayes Classifier:
+
+```python
+from NaiveBayesClassifier import NaiveBayesClassifier
+import pandas as pd
+
+# Load training and testing data
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+train_labels = pd.read_csv('Train_Labels.csv', header=None).values.ravel()
+test_data = pd.read_csv('Test_Data.csv', header=None).values
+test_labels = pd.read_csv('Test_Labels.csv', header=None).values.ravel()
+
+# Initialize the Naive Bayes Classifier
+naive_bayes = NaiveBayesClassifier()
+
+# Train the model
+naive_bayes.fit(train_data, train_labels)
+
+# Evaluate the model
+accuracy = naive_bayes.evaluate(test_data, test_labels)
+print(f"Naive Bayes Classifier Accuracy: {accuracy * 100:.2f}%")
+```
+
+#### 4. Naive Bayes Classifier with Risk Implementation
+Example usage of the Naive Bayes Classifier with Risk Implementation:
+
+```python
+from NaiveBayesRiskClassifier import NaiveBayesRiskClassifier
+import pandas as pd
+
+# Load training and testing data
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+train_labels = pd.read_csv('Train_Labels.csv', header=None).values.ravel()
+test_data = pd.read_csv('Test_Data.csv', header=None).values
+test_labels = pd.read_csv('Test_Labels.csv', header=None).values.ravel()
+
+# Define a risk matrix
+risk_matrix = [
+    [0, 1, 2],  # Cost of predicting class 0
+    [1, 0, 1],  # Cost of predicting class 1
+    [2, 1, 0],  # Cost of predicting class 2
+]
+
+# Initialize the Naive Bayes Classifier with Risk
+naive_bayes_risk = NaiveBayesRiskClassifier(risk_matrix=risk_matrix)
+
+# Train the model
+naive_bayes_risk.fit(train_data, train_labels)
+
+# Evaluate the model
+accuracy = naive_bayes_risk.evaluate(test_data, test_labels)
+print(f"Naive Bayes with Risk Classifier Accuracy: {accuracy * 100:.2f}%")
+```
+
+#### 5. Principal Component Analysis (PCA):
+Example usage of the PCA:
+
+```python
+from PCA import PCA
+import pandas as pd
+
+# Load training data
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+
+# Initialize the PCA with 2 components
+pca = PCA(n_components=2)
+
+# Fit and transform the data
+train_data_pca = pca.fit_transform(train_data)
+
+print("PCA completed.")
+```
+
+#### 6. Linear Discriminant Analysis (LDA)
+Example usage of the LDA:
+
+```python
+from LDA import LDA
+import pandas as pd
+
+# Load training and testing data
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+train_labels = pd.read_csv('Train_Labels.csv', header=None).values.ravel()
+test_data = pd.read_csv('Test_Data.csv', header=None).values
+test_labels = pd.read_csv('Test_Labels.csv', header=None).values.ravel()
+
+# Initialize the LDA with 2 components
+lda = LDA(n_components=2)
+
+# Train the LDA
+lda.fit(train_data, train_labels)
+
+# Transform the data
+train_data_lda = lda.transform(train_data)
+test_data_lda = lda.transform(test_data)
+
+print("LDA completed.")
+```
