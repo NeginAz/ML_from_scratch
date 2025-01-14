@@ -4,12 +4,12 @@ This repository contains custom implementations of several essential machine lea
 
 These implementations are designed to help with understanding the inner workings of popular algorithms by building them from scratch in Python. The repository covers a range of non-parametric density estimators and linear models that are fundamental to many machine learning applications.
 
-[Parzen Window PDF Estimator](#Parzen_Window_PDF_Estimator)
-[k-NN Density Estimator](#k-NN_Density_Estimator)
-Naive Bayes Classifier
-Naive Bayes Classifier with Risk Implementation
-Principal Component Analysis (PCA)
-Linear Discriminant Analysis (LDA)
+- [Parzen Window PDF Estimator](#Parzen_Window_PDF_Estimator)
+- [k-NN Density Estimator](#k-NN_Density_Estimator)
+- Naive Bayes Classifier
+- Naive Bayes Classifier with Risk Implementation
+- Principal Component Analysis (PCA)
+- Linear Discriminant Analysis (LDA)
 These models are designed to estimate probability density functions (PDFs), perform dimensionality reduction, and apply Bayesian decision theory to make classification decisions.
 
 ## 1. Parzen Window PDF Estimator
