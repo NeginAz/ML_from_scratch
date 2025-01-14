@@ -18,9 +18,9 @@ Both estimators consider prior probabilities to classify new data points by maxi
 
 Key Features:
 
-Customizable window size (h)
-Supports both rectangular and Gaussian kernels
-Handles multiclass classification using Bayesian decision rules
+- Customizable window size (h)
+- Supports both rectangular and Gaussian kernels
+- Handles multiclass classification using Bayesian decision rules
 
 
 
@@ -32,9 +32,9 @@ This estimator is also used for classification by calculating the posterior prob
 
 Key Features:
 
-Customizable number of neighbors (k)
-Efficient implementation using distance partitioning
-Supports multiclass classification with prior probabilities
+- Customizable number of neighbors (k)
+- Efficient implementation using distance partitioning
+- Supports multiclass classification with prior probabilities
 
 
 3. Naive Bayes Classifier
