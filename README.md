@@ -59,3 +59,19 @@ Key Features:
 - Incorporates a risk matrix for cost-sensitive classification
 - Minimizes expected risk instead of maximizing posterior probability
 - Supports multiclass classification
+
+
+## 5. Principal Component Analysis (PCA)
+The Principal Component Analysis (PCA) is a popular dimensionality reduction technique used to reduce the number of features in a dataset while retaining as much variance as possible.
+
+PCA works by:
+
+Centering the data (subtracting the mean from each feature).
+Calculating the covariance matrix.
+Finding the eigenvectors and eigenvalues of the covariance matrix.
+Projecting the data onto the eigenvectors corresponding to the largest eigenvalues.
+Key Features:
+
+Reduces high-dimensional data to a lower-dimensional subspace.
+Retains the most important features by maximizing the explained variance.
+Helps improve model performance and visualization.
