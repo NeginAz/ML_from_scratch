@@ -70,8 +70,29 @@ Centering the data (subtracting the mean from each feature).
 Calculating the covariance matrix.
 Finding the eigenvectors and eigenvalues of the covariance matrix.
 Projecting the data onto the eigenvectors corresponding to the largest eigenvalues.
+
 Key Features:
 
-Reduces high-dimensional data to a lower-dimensional subspace.
-Retains the most important features by maximizing the explained variance.
-Helps improve model performance and visualization.
+- Reduces high-dimensional data to a lower-dimensional subspace.
+- Retains the most important features by maximizing the explained variance.
+- Helps improve model performance and visualization.
+
+
+## 6. Linear Discriminant Analysis (LDA)
+The Linear Discriminant Analysis (LDA) is a supervised dimensionality reduction technique that seeks to maximize the separation between classes by projecting the data onto a lower-dimensional space.
+
+LDA works by:
+
+Computing the mean vectors for each class.
+Calculating the within-class scatter matrix and between-class scatter matrix.
+Finding the linear discriminants that maximize the ratio of between-class variance to within-class variance.
+Projecting the data onto the linear discriminants.
+LDA is often used for classification tasks and works best when:
+
+The classes are linearly separable.
+The data distribution is Gaussian.
+Key Features:
+
+- Reduces data to a lower-dimensional space.
+- Maximizes the separation between classes.
+- Helps improve classification accuracy.
