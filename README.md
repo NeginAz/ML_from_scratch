@@ -1,5 +1,5 @@
 
-# ML_From_Scratch: 
+# ML From Scratch: 
 This repository contains custom implementations of several essential machine learning algorithms for pattern recognition, dimensionality reduction, and classification tasks.
 
 These implementations are designed to help with understanding the inner workings of popular algorithms by building them from scratch in Python. The repository covers a range of non-parametric density estimators and linear models that are fundamental to many machine learning applications.
@@ -101,7 +101,7 @@ Key Features:
 - Helps improve classification accuracy.
 
 
-## To install all the required dependencies, run:
+#### To install all the required dependencies, run:
 
 ```console
 pip install -r requirements.txt
