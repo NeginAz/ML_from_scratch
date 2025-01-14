@@ -102,6 +102,7 @@ Key Features:
 
 
 ## To install all the required dependencies, run:
-'''console
+
+```console
 pip install -r requirements.txt
-''' 
+```
