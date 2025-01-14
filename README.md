@@ -113,3 +113,35 @@ cd ML_From_Scratch
 ```console
 pip install -r requirements.txt
 ```
+
+#### Run the models in your Python environment:
+```console
+python your_script.py
+```
+Replace your_script.py with your custom script that imports and uses any of the models.
+
+
+
+#### Example usage of the Parzen Window PDF Estimator:
+
+```python
+from ParzenPDFEstimator import ParzenPDFEstimator
+import pandas as pd
+
+# Load training and testing data
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+train_labels = pd.read_csv('Train_Labels.csv', header=None).values.ravel()
+test_data = pd.read_csv('Test_Data.csv', header=None).values
+test_labels = pd.read_csv('Test_Labels.csv', header=None).values.ravel()
+
+# Initialize the Parzen Window Estimator
+parzen = ParzenPDFEstimator(window_size=0.1, window_type="gaussian")
+
+# Train the model
+parzen.fit(train_data, train_labels)
+
+# Evaluate the model
+accuracy = parzen.evaluate(test_data, test_labels)
+print(f"Parzen Window Estimator Accuracy: {accuracy * 100:.2f}%")
+```
+
