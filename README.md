@@ -1,11 +1,14 @@
-Density Estimators Project
-This repository contains implementations of two non-parametric density estimators commonly used in pattern recognition and classification tasks:
 
-Parzen Window PDF Estimator (with Rectangular and Gaussian Kernels)
+## ML_From_Scratch: 
+This repository contains implementations of several machine learning algorithms for pattern recognition, dimensionality reduction, and classification tasks, including:
+
+Parzen Window PDF Estimator (Rectangular and Gaussian Kernels)
 k-NN Density Estimator
-These models are designed to estimate the probability density function (PDF) of a given dataset and use these estimates for classification tasks by applying Bayesian decision theory.
-
-
+Naive Bayes Classifier
+Naive Bayes Classifier with Risk Implementation
+Principal Component Analysis (PCA)
+Linear Discriminant Analysis (LDA)
+These models are designed to estimate probability density functions (PDFs), perform dimensionality reduction, and apply Bayesian decision theory to make classification decisions.
 1. Parzen Window PDF Estimator
 
 The Parzen window method is a non-parametric technique for estimating the PDF of a dataset by placing a kernel function (either a rectangular or Gaussian window) over each data point. The estimator sums the contributions of these kernels to approximate the overall density function.
