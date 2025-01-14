@@ -99,7 +99,14 @@ Key Features:
 - Reduces data to a lower-dimensional space.
 - Maximizes the separation between classes.
 - Helps improve classification accuracy.
+- 
+## How to Run the Models
+#### Clone the repository:
 
+```console
+git clone https://github.com/yourusername/ML_From_Scratch
+cd ML_From_Scratch
+```
 
 #### To install all the required dependencies, run:
 
