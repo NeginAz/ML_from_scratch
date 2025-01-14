@@ -37,3 +37,107 @@ Efficient implementation using distance partitioning
 Supports multiclass classification with prior probabilities
 
 
+3. Naive Bayes Classifier
+The Naive Bayes Classifier is a parametric probabilistic model based on Bayes' theorem. It assumes that the features are conditionally independent given the class label, which simplifies the computation of the posterior probabilities.
+
+The classifier works by calculating:
+
+P
+(
+class
+∣
+features
+)
+∝
+P
+(
+features
+∣
+class
+)
+×
+P
+(
+class
+)
+P(class∣features)∝P(features∣class)×P(class)
+It predicts the class with the highest posterior probability.
+
+Key Features:
+
+Handles multiclass classification
+Supports both discrete and continuous features
+Incorporates prior probabilities and likelihoods
+
+4. Naive Bayes Classifier with Risk Implementation
+This variant of the Naive Bayes Classifier incorporates decision risk into the classification process. Instead of simply choosing the class with the highest posterior probability, the classifier minimizes the expected risk by taking into account a risk matrix.
+
+The risk matrix defines the cost of misclassifications, allowing the classifier to make cost-sensitive decisions.
+
+Risk-Based Decision Rule:
+
+Decision
+=
+arg
+⁡
+min
+⁡
+i
+∑
+j
+R
+(
+i
+,
+j
+)
+P
+(
+C
+j
+∣
+features
+)
+Decision=arg 
+i
+min
+​	
+  
+j
+∑
+​	
+ R(i,j)P(C 
+j
+​	
+ ∣features)
+Where:
+
+R
+(
+i
+,
+j
+)
+R(i,j) is the risk of classifying a sample as class 
+i
+i when it actually belongs to class 
+j
+j.
+P
+(
+C
+j
+∣
+features
+)
+P(C 
+j
+​	
+ ∣features) is the posterior probability for class 
+j
+j.
+Key Features:
+
+Incorporates a risk matrix for cost-sensitive classification
+Minimizes expected risk instead of maximizing posterior probability
+Supports multiclass classification
