@@ -1,5 +1,5 @@
 
-## ML_From_Scratch: 
+# ML_From_Scratch: 
 This repository contains implementations of several machine learning algorithms for pattern recognition, dimensionality reduction, and classification tasks, including:
 
 Parzen Window PDF Estimator (Rectangular and Gaussian Kernels)
@@ -9,7 +9,7 @@ Naive Bayes Classifier with Risk Implementation
 Principal Component Analysis (PCA)
 Linear Discriminant Analysis (LDA)
 These models are designed to estimate probability density functions (PDFs), perform dimensionality reduction, and apply Bayesian decision theory to make classification decisions.
-1. Parzen Window PDF Estimator
+## 1. Parzen Window PDF Estimator
 
 The Parzen window method is a non-parametric technique for estimating the PDF of a dataset by placing a kernel function (either a rectangular or Gaussian window) over each data point. The estimator sums the contributions of these kernels to approximate the overall density function.
 
@@ -27,7 +27,7 @@ Key Features:
 
 
 
-2. k-NN Density Estimator
+## 2. k-NN Density Estimator
 
 The k-Nearest Neighbors (k-NN) PDF estimator is another non-parametric method that estimates the PDF by finding the distance to the k-th nearest neighbor of a point in the dataset. The density is computed as the ratio of the number of points within this distance to the volume of a d-dimensional ball centered on the point.
 
@@ -40,7 +40,7 @@ Key Features:
 - Supports multiclass classification with prior probabilities
 
 
-3. Naive Bayes Classifier
+## 3. Naive Bayes Classifier
 The Naive Bayes Classifier is a parametric probabilistic model based on Bayes' theorem. It assumes that the features are conditionally independent given the class label, which simplifies the computation of the posterior probabilities. It predicts the class with the highest posterior probability.
 
 Key Features:
@@ -49,7 +49,7 @@ Key Features:
 - Supports both discrete and continuous features
 - Incorporates prior probabilities and likelihoods
 
-4. Naive Bayes Classifier with Risk Implementation
+## 4. Naive Bayes Classifier with Risk Implementation
 This variant of the Naive Bayes Classifier incorporates decision risk into the classification process. Instead of simply choosing the class with the highest posterior probability, the classifier minimizes the expected risk by taking into account a risk matrix.
 
 The risk matrix defines the cost of misclassifications, allowing the classifier to make cost-sensitive decisions.
