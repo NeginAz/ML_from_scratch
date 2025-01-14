@@ -1,0 +1,39 @@
+Density Estimators Project
+This repository contains implementations of two non-parametric density estimators commonly used in pattern recognition and classification tasks:
+
+Parzen Window PDF Estimator (with Rectangular and Gaussian Kernels)
+k-NN Density Estimator
+These models are designed to estimate the probability density function (PDF) of a given dataset and use these estimates for classification tasks by applying Bayesian decision theory.
+
+
+1. Parzen Window PDF Estimator
+
+The Parzen window method is a non-parametric technique for estimating the PDF of a dataset by placing a kernel function (either a rectangular or Gaussian window) over each data point. The estimator sums the contributions of these kernels to approximate the overall density function.
+
+The implementation supports two types of kernels:
+
+Rectangular Window (Hypercube): A uniform kernel that assigns equal weight to points within a fixed window size.
+Gaussian Window: A smoother kernel that uses the Gaussian function to weigh points based on their distance from the target.
+Both estimators consider prior probabilities to classify new data points by maximizing the posterior probability.
+
+Key Features:
+
+Customizable window size (h)
+Supports both rectangular and Gaussian kernels
+Handles multiclass classification using Bayesian decision rules
+
+
+
+2. k-NN Density Estimator
+
+The k-Nearest Neighbors (k-NN) PDF estimator is another non-parametric method that estimates the PDF by finding the distance to the k-th nearest neighbor of a point in the dataset. The density is computed as the ratio of the number of points within this distance to the volume of a d-dimensional ball centered on the point.
+
+This estimator is also used for classification by calculating the posterior probabilities for each class and predicting the class with the highest posterior.
+
+Key Features:
+
+Customizable number of neighbors (k)
+Efficient implementation using distance partitioning
+Supports multiclass classification with prior probabilities
+
+
