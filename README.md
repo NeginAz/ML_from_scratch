@@ -101,3 +101,7 @@ Key Features:
 - Helps improve classification accuracy.
 
 
+## To install all the required dependencies, run:
+'''console
+pip install -r requirements.txt
+''' 
