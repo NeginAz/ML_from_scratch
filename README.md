@@ -285,7 +285,7 @@ test_data_lda = lda.transform(test_data)
 print("LDA completed.")
 ```
 
-#### 6. Feature Selection Algorithm
+#### 7. Feature Selection Algorithm
 Example Usage of the Feature Selection Algorithm:
 ```python
 from FeatureSelector import FeatureSelector
