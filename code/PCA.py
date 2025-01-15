@@ -62,7 +62,7 @@ class PCA:
 # Main function
 if __name__ == "__main__":
     # Load dataset
-    images, labels = func.load_mnist("Fashion-MNIST", kind='train')
+    images, labels = func.load_mnist("../data/Fashion-MNIST", kind='train')
 
     # Reshape and Normalize Data
     X = images.reshape(images.shape[0], -1)  # Flatten the 28x28 images into vectors of length 784
