@@ -10,6 +10,7 @@ These implementations are designed to help with understanding the inner workings
 - [Naive Bayes Classifier with Risk Implementation](#4-Naive-Bayes-Classifier-with-Risk-Implementation)
 - [Principal Component Analysis (PCA)](#5-Principal_Component_Analysis_(PCA))
 - [Linear Discriminant Analysis (LDA)](#6-Linear-Discriminant-Analysis-(LDA))
+- [Feature Selection Algorithm](#7-Feature-Selection-Algorithm)
 
 
 ## 1. Parzen Window PDF Estimator
