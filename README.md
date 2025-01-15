@@ -99,7 +99,24 @@ Key Features:
 - Reduces data to a lower-dimensional space.
 - Maximizes the separation between classes.
 - Helps improve classification accuracy.
-- 
+
+
+## 7. Feature Selection Algorithm
+
+The Feature Selection Algorithm helps identify the most relevant features in a dataset, improving the performance of machine learning models by reducing the dimensionality and eliminating irrelevant or redundant features.
+
+This algorithm implements sequential forward selection (SFS), which starts with an empty feature set and incrementally adds features that improve model performance the most.
+
+Feature selection is crucial in high-dimensional datasets, where many features may not contribute meaningfully to the prediction task.
+
+Key Features:
+
+- Reduces the dimensionality of datasets by selecting relevant features
+- Improves model performance and training speed
+- Works with any classification algorithm (can be paired with Parzen, k-NN, Naive Bayes, etc.)
+
+
+
 ## How to Run the Models
 #### Clone the repository:
 
@@ -267,3 +284,25 @@ test_data_lda = lda.transform(test_data)
 
 print("LDA completed.")
 ```
+
+#### 6. Feature Selection Algorithm
+Example Usage of the Feature Selection Algorithm:
+```python
+from FeatureSelector import FeatureSelector
+import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+
+# Load dataset
+train_data = pd.read_csv('Train_Data.csv', header=None).values
+train_labels = pd.read_csv('Train_Labels.csv', header=None).values.ravel()
+
+# Initialize the Feature Selector with a Naive Bayes classifier
+feature_selector = FeatureSelector(estimator=GaussianNB(), num_features=5)
+
+# Perform feature selection
+selected_features = feature_selector.fit_transform(train_data, train_labels)
+
+# Display the selected features
+print("Selected Features:")
+print(selected_features)
+````
